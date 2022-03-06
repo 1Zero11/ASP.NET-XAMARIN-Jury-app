@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+     <EditText
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNameOfBlock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px" 
+        android:hint="Блок"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить блок"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnAddBlock">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить на сервер"
+        android:id="@+id/btnSendBlocksToServer">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавление жюри в блоки"
+        android:id="@+id/btnAddBlocks_Jury">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавление Участников в блоки"
+        android:id="@+id/btnAddBlocks_Members">
+    </Button>
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавление Описания оценок"
+        android:id="@+id/btnAddInfo_Notes">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Участники файл"
+        android:id="@+id/btnFromFile">
+    </Button>
+    <ListView
+        android:id="@+id/listViewAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

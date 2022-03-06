@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:p4="http://xamarin.com/mono/android/designer"
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1" >
+     <EditText
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NumTable1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:hint="Номер Таблицы"/>
+        <EditText
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DeleteMembers"
+            android:layout_below="@id/NumTable1"
+            android:layout_centerHorizontal="true"
+            android:hint="Номер для удаления участника"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить участника по номеру"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/DeleteMembers"
+            android:id="@+id/btnDeleteMembers"
+            android:enabled="false">
+        </Button>
+        <EditText
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FIO_Members"
+            android:layout_below="@id/btnDeleteMembers"
+            android:layout_centerHorizontal="true"
+            android:hint="ФИО участника"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить ФИО участника"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/FIO_Members"
+            android:id="@+id/btnAddFIO_Members">
+        </Button>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить информацию на сервер"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnAddFIO_Members"
+            android:id="@+id/btnSendMembersToServer">
+        </Button>
+
+        <ListView
+            android:id="@+id/listViewMembers"
+            android:layout_below="@id/btnSendMembersToServer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+</RelativeLayout>
